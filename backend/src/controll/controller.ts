@@ -7,6 +7,7 @@ export const login = async (req: Request, res: Response) => {
   
   // Verificar se o usuário existe (banco de dados fictício)
   const user = { email: 'le@example.com', password: '12345' }; // Substituir por DB real
+}
 
 // Função de registro
 export const register = async (req: Request, res: Response) => {

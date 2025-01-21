@@ -12,6 +12,6 @@ export const hashPassword = async (password: string): Promise<string> => {
 };
 
 // Função para comparar senhas
-export const comparePassword = async (inputPassword: string, storedPassword: string): Promise<boolean> => {
+export const comparePass = async (inputPassword: string, storedPassword: string): Promise<boolean> => {
   return bcrypt.compare(inputPassword, storedPassword);
 };
