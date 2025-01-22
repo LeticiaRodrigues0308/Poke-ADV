@@ -12,13 +12,13 @@ const handleSubmit = async (values: { email: string; password: string }) => {
       localStorage.setItem('token', response.data.token);
       navigate('/dashboard');
     } catch (err) {
-      alert('Login failed');
+      alert('Falha ao entrar');
     }
   };
 
 return (
     <div>
-      <h2>Login</h2>
+      <h2>Entrar</h2>
       <Formik
         initialValues={{ email: '', password: '' }}
         onSubmit={handleSubmit}
@@ -29,10 +29,10 @@ return (
             <Field type="email" name="email" required />
           </div>
           <div>
-            <label>Password</label>
+            <label>Senha</label>
             <Field type="password" name="password" required />
           </div>
-          <button type="submit">Login</button>
+          <button type="submit">Entrar</button>
         </Form>
       </Formik>
     </div>
